@@ -20,13 +20,11 @@ class SecondActivity : AppCompatActivity() {
         txtEmail = findViewById(R.id.txt_email)
         imageView = findViewById(R.id.photo_profile)
 
-        // Ambil data dari Intent
         val firstName = intent.getStringExtra("firstName")
         val lastName = intent.getStringExtra("lastName")
         val email = intent.getStringExtra("email")
         val avatar = intent.getStringExtra("avatar")
 
-        // Set data ke UI
         txtName.text = "Name  : $firstName $lastName"
         txtEmail.text = "Email   : $email"
         Glide.with(this).load(avatar).into(imageView)

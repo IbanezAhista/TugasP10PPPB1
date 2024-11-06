@@ -21,7 +21,7 @@ import retrofit2.Response
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var adapterProfile: ProfileAdapter
-    private val userList = ArrayList<Data>() // Pastikan tipe data ArrayList<Data>
+    private val userList = ArrayList<Data>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                 putExtra("firstName", profile.firstName)
                 putExtra("lastName", profile.lastName)
                 putExtra("email", profile.email)
-                putExtra("avatar", profile.avatar) // Jika Anda memiliki gambar URL
+                putExtra("avatar", profile.avatar)
             }
             startActivity(intent)
         }
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                 response.body()?.data?.let { data ->
                     userList.clear()
                     userList.addAll(data)
-                    adapterProfile.notifyDataSetChanged() // Memperbarui RecyclerView
+                    adapterProfile.notifyDataSetChanged()
                 }
             }
 

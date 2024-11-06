@@ -28,7 +28,7 @@
                 android:id="@+id/txt_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name   : Teh Anget"
+                android:text="Name : Teh Anget"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_medium"
                 android:textSize="12sp"/>
@@ -37,7 +37,7 @@
                 android:id="@+id/txt_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email     : TehAgt@gmail.com"
+                android:text="Email : TehAgt@gmail.com"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_medium"
                 android:textSize="12sp"/>

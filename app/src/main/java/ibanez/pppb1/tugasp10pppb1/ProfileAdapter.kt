@@ -19,11 +19,11 @@ class ProfileAdapter(
             binding.txtName.text = "Name  : ${profile.firstName} ${profile.lastName}"
             binding.txtEmail.text = "Email   : ${profile.email}"
             Glide.with(binding.root.context)
-                .load(profile.avatar) // URL gambar dari API
+                .load(profile.avatar)
                 .into(binding.photoProfile)
 
             binding.photoProfile.setOnClickListener {
-                onItemClick(profile) // Kirim data ke SecondActivity
+                onItemClick(profile)
             }
             binding.txtName.setOnClickListener {
                 onItemClick(profile)
